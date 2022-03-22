@@ -7,11 +7,9 @@ int main() {
   char *string;
 
   string = (char *)(malloc(6 * sizeof(char)));
-  strcpy(string, "DCBA!");
-  puts(string);
 
   while (1) {
-    puts("Enter password:");
+    printf("Enter password:");
     gets(string);
     if (strcmp(string, "popo"))
       printf("Wrong Pass!\n");
