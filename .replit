@@ -1,2 +1,2 @@
 language = "c"
-run = "C ./arknights_pulls_simulation.c"
+run = "C ./demo01.c"
