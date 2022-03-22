@@ -2,13 +2,25 @@
 #include "stdlib.h"
 #include "string.h"
 
-int main () {
+int main() {
 
-    char *string;
+  char *string;
 
-    string = (char *) (malloc(6*sizeof(char)));
-    strcpy(string,"pass!");
-    puts(string);
+  string = (char *)(malloc(6 * sizeof(char)));
+  strcpy(string, "DCBA!");
+  puts(string);
 
-    return 0;
+  while (1) {
+    puts("Enter password:");
+    gets(string);
+    if (strcmp(string, "popo"))
+      printf("Wrong Pass!\n");
+    else {
+      puts("Correct Pass!");
+      break;
+    }
+  }
+
+  // puts(string);
+  return 0;
 }
